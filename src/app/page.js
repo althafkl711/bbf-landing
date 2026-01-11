@@ -262,12 +262,12 @@ export default function Home() {
 
         <div className="relative z-10 container mx-auto px-6">
           <ScrollReveal>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Ready to Make an Impact?</h2>
-            <p className="text-xl opacity-90 mb-10 max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Make an Impact?</h2>
+            <p className="text-lg opacity-90 mb-10 max-w-2xl mx-auto">
               Your support can provide the meal that nourishes a child&apos;s body and the book that feeds their mind.
             </p>
             <Link
-              href="/donate"
+              href="/contact"
               className="bg-white text-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-2xl"
             >
               Donate Today
