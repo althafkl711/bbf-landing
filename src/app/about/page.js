@@ -140,8 +140,8 @@ export default function About() {
                         <ScrollReveal delay={0.1}>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
-                                <div className="p-6 border-1 border-gray-100 rounded-lg h-full">
-                                    <h4 className="font-semibold text-xl mb-4 text-black border-b border-gray-100 pb-2">Registration Details</h4>
+                                <div className="p-6 border-1 border-gray-200 rounded-xl h-full">
+                                    <h4 className="font-semibold text-xl mb-4 text-primary border-b border-gray-200 pb-2">Registration Details</h4>
                                     <ul className="space-y-3 text-gray-700">
                                         <li className="flex flex-col sm:flex-row sm:justify-between"><span className="font-semibold text-gray-900">Legal Name:</span> <span>VERTEXHIVE BREAD AND BOOK FOUNDATION</span></li>
                                         <li className="flex justify-between"><span className="font-semibold text-gray-900">Established:</span> <span>2021</span></li>
@@ -149,8 +149,8 @@ export default function About() {
                                     </ul>
                                 </div>
 
-                                <div className="p-6 border-1 border-gray-100 rounded-lg h-full">
-                                    <h4 className="font-semibold text-xl mb-4 text-black border-b border-gray-100 pb-2">Compliance Numbers</h4>
+                                <div className="p-6 border-1 border-gray-200 rounded-xl h-full">
+                                    <h4 className="font-semibold text-xl mb-4 text-primary border-b border-gray-200 pb-2">Compliance Numbers</h4>
                                     <ul className="space-y-3 text-gray-700">
                                         <li className="flex flex-col sm:flex-row sm:justify-between"><span className="font-semibold text-gray-900">CIN</span> <span>U85500KL2025NPL091835</span></li>
                                         <li className="flex justify-between"><span className="font-semibold text-gray-900">PAN</span> <span>AAKCV7339J</span></li>
