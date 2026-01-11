@@ -36,10 +36,10 @@ export default function Contact() {
             </section>
 
             <div className="container mx-auto px-6 py-20">
-                <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
                     {/* Contact Info */}
                     <ScrollReveal>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 h-full">
+                        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 w-full h-full">
                             <h2 className="text-2xl font-bold mb-8">Contact Information</h2>
                             <div className="space-y-6">
                                 <div className="flex items-center gap-4 text-gray-700">
@@ -48,7 +48,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-foreground">Email</h3>
-                                        <p>info@breadandbookfoundation.org</p>
+                                        <p className="text-[12px] md:text-[16px] "> <span>info</span> <span>@breadandbookfoundation.org</span></p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4 text-gray-700">
@@ -57,7 +57,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-foreground">Phone</h3>
-                                        <p>+91 76983 24264, +91 96453 24269</p>
+                                        <p className="text-[12px] md:text-[16px]">+91 7698324264, +91 9645324269</p>
                                     </div>
                                 </div>
                                 <div className=" w-full flex flex-row items-center gap-4 text-gray-700">
@@ -66,7 +66,7 @@ export default function Contact() {
                                     </div>
                                     <div className="w-auto">
                                         <h3 className="font-semibold text-foreground">Address</h3>
-                                        <div className="w-full flex flex-col"> <span>Vertexhive Bread and Book Foundation</span>Jamilalayalm, Chira Road, <span> Thrissur, Kerala 680001, India.</span> </div>
+                                        <div className="w-full flex flex-col text-[12px] md:text-[16px]"> <span>Vertexhive Bread and Book Foundation</span>Jamilalayalm, Chira Road, <span> Thrissur, Kerala 680001, India.</span> </div>
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ export default function Contact() {
 
                     {/* Form */}
                     <ScrollReveal delay={0.2}>
-                        <form className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <form className=" w-full bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
                             <h2 className="text-2xl font-bold mb-6">Send us a message</h2>
                             <div className="space-y-4">
                                 <div>

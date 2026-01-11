@@ -163,11 +163,11 @@ export default function About() {
                         </ScrollReveal>
 
                         {/* Images */}
-                        <ScrollReveal delay={0.2} className="space-y-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
-                            <div className="relative aspect-[4/3] h-[440px] rounded-2xl overflow-hidden border-1 border-gray-100 bg-white">
+                        <ScrollReveal delay={0.2} className="space-y-6 grid grid-cols-1 lg:grid-cols-2 gap-16 align-center">
+                            <div className="relative aspect-[4/3] w-[100%] h-[full] rounded-2xl overflow-hidden border-1 border-gray-100 bg-white">
                                 <Image src="/images/certi-1.jpg" alt="Foundation Certificate 1" fill className="object-contain p-2" />
                             </div>
-                            <div className="relative aspect-[4/3] h-[440px] rounded-2xl overflow-hidden border-1 border-gray-100 bg-white">
+                            <div className="relative aspect-[4/3] w-[100%] h-[full] rounded-2xl overflow-hidden border-1 border-gray-100 bg-white">
                                 <Image src="/images/certi-2.jpg" alt="Foundation Certificate 2" fill className="object-contain p-2" />
                             </div>
                         </ScrollReveal>
