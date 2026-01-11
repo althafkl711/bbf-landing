@@ -41,7 +41,7 @@ export default function Header() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className={`text-sm font-medium transition-colors hover:text-primary ${pathname === link.href ? "text-primary" : "text-foreground"
+                            className={`text-md transition-colors hover:text-primary ${pathname === link.href ? "text-primary font-bold" : "text-foreground font-medium"
                                 }`}
                         >
                             {link.name}
@@ -71,7 +71,7 @@ export default function Header() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className={`text-lg font-medium ${pathname === link.href ? "text-primary" : "text-foreground"
+                            className={`text-lg ${pathname === link.href ? "text-primary font-bold" : "text-foreground font-medium"
                                 }`}
                             onClick={() => setIsOpen(false)}
                         >

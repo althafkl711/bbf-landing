@@ -5,8 +5,13 @@ import "./globals.css";
 
 export const metadata = {
   title: "Bread and Book Foundation",
-  description: "Nourishing children's lives through food and education. Join us to build brighter futures today.",
-  keywords: ["charity", "education", "food", "children", "india", "non-profit"],
+  description: "The Bread and Book Foundation is dedicated to uplifting India's most vulnerable communities. We nourish children's lives through food and education. Our core philosophy is: No Child Should Choose Between Bread and Book.",
+  keywords: [
+    "charity", "Bread and Book", "Bread & Book","education", "food", "children", "india", "non-profit",
+    "NGO", "child welfare", "hunger relief", "literacy", "donations",
+    "social impact", "community development", "Kerala charity", "volunteer",
+    "Bread and Book Foundation", "poverty alleviation", "bread and book foundation", "bread & book foundation", ""
+  ],
 };
 
 export default function RootLayout({ children }) {

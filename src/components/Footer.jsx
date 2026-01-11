@@ -68,7 +68,7 @@ export default function Footer() {
 
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
                     <p>© {new Date().getFullYear()} Bread and Book Foundation. All rights reserved.</p>
-                    <p className="mt-2 md:mt-0">Designed & Developed with ❤️</p>
+                    
                 </div>
             </div>
         </footer>
