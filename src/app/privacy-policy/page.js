@@ -1,3 +1,5 @@
+import PageHero from "@/components/PageHero";
+
 export const metadata = {
     title: "Privacy Policy | Bread and Book Foundation",
     description: "Our commitment to protecting your privacy.",
@@ -5,9 +7,14 @@ export const metadata = {
 
 export default function PrivacyPolicy() {
     return (
-        <div className="bg-white min-h-screen py-20">
-            <div className="container mx-auto px-6 max-w-4xl text-foreground">
-                <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
+        <div className="bg-background min-h-screen mt-[-80px]">
+            {/* Hero Section */}
+            <PageHero
+                title="Privacy Policy"
+                subtitle="Our commitment to protecting your privacy."
+            />
+
+            <div className="container mx-auto px-6 py-16 max-w-4xl text-foreground">
                 <p className="text-gray-600 mb-8">Last Updated: {new Date().toLocaleDateString()}</p>
 
                 <section className="mb-8">

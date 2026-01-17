@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
+import PageHero from "@/components/PageHero";
 
 export const metadata = {
     title: "Our Programs | Bread and Book Foundation",
@@ -50,30 +51,12 @@ const programsData = [
 
 export default function Programs() {
     return (
-        <div className="bg-background min-h-screen">
-            {/* Hero Section - Matching About Us style */}
-            <section className="bg-primary text-white py-24 relative overflow-hidden">
-                {/* Background Image with Overlay */}
-                <div className="absolute inset-0 z-0 opacity-20">
-                    <Image
-                        src="/images/hero-community.png"
-                        alt="Background Pattern"
-                        fill
-                        className="object-cover"
-                    />
-                </div>
-                <div className="absolute inset-0 z-0 bg-black/20 backdrop-blur-[2px]" />
-
-                <div className="container mx-auto px-6 text-center relative z-10">
-                    <ScrollReveal>
-                        <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Programs</h1>
-                        <div className="w-24 h-1 bg-secondary mx-auto rounded-full mb-6"></div>
-                        <p className="text-xl md:text-2xl opacity-100 max-w-3xl mx-auto font-medium">
-                            Transforming lives through holistic and sustainable interventions.
-                        </p>
-                    </ScrollReveal>
-                </div>
-            </section>
+        <div className="bg-background min-h-screen mt-[-80px]">
+            {/* Hero Section */}
+            <PageHero
+                title="Our Programs"
+                subtitle="Transforming lives through holistic and sustainable interventions."
+            />
 
             {/* Programs List */}
             <div className="">
@@ -118,6 +101,7 @@ export default function Programs() {
                     </section>
                 ))}
             </div>
+
 
             {/* CTA */}
             <section className="py-20 bg-accent/10">

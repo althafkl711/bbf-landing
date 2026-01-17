@@ -42,26 +42,28 @@ export default function StoriesSection() {
             <div className="container mx-auto px-6">
                 {/* Section Header */}
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#2C2C2C] mb-4">Stories & Updates</h2>
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#2C2C2C] mb-4">Stories & Updates</h2>
                     <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
                 </div>
 
                 {/* Carousel Container */}
                 <div className="relative max-w-6xl mx-auto">
-                    {/* Navigation Buttons */}
-                    <button
-                        onClick={prevSlide}
-                        className="absolute left-0 md:-left-16 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-xl border-2 border-[#F2F2F2] flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
-                    >
-                        <ChevronLeft size={32} />
-                    </button>
-
-                    <button
-                        onClick={nextSlide}
-                        className="absolute right-0 md:-right-16 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-xl border-2 border-[#F2F2F2] flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
-                    >
-                        <ChevronRight size={32} />
-                    </button>
+                    {/* Navigation Buttons - Awards style */}
+                    <div className="absolute left-1/2 -translate-x-1/2 -bottom-4 z-20 flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-lg">
+                        <button
+                            onClick={prevSlide}
+                            className="p-2 text-gray-400 hover:text-primary transition-colors"
+                        >
+                            <ChevronLeft size={20} />
+                        </button>
+                        <div className="w-16 h-px bg-primary" />
+                        <button
+                            onClick={nextSlide}
+                            className="p-2 text-primary hover:text-accent transition-colors"
+                        >
+                            <ChevronRight size={20} />
+                        </button>
+                    </div>
 
                     {/* Slide Content */}
                     <div className="overflow-hidden relative min-h-[500px] md:min-h-[400px]">

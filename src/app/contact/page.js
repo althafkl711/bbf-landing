@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+import PageHero from "@/components/PageHero";
 
 export const metadata = {
     title: "Contact Us | Bread and Book Foundation",
@@ -10,30 +11,12 @@ export const metadata = {
 
 export default function Contact() {
     return (
-        <div className="bg-background min-h-screen">
-            {/* Hero Section - Matching About Us/Programs style */}
-            <section className="bg-primary text-white py-24 relative overflow-hidden">
-                {/* Background Image with Overlay */}
-                <div className="absolute inset-0 z-0 opacity-20">
-                    <Image
-                        src="/images/hero-community.png"
-                        alt="Background Pattern"
-                        fill
-                        className="object-cover"
-                    />
-                </div>
-                <div className="absolute inset-0 z-0 bg-black/20 backdrop-blur-[2px]" />
-
-                <div className="container mx-auto px-6 text-center relative z-10">
-                    <ScrollReveal>
-                        <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
-                        <div className="w-24 h-1 bg-secondary mx-auto rounded-full mb-6"></div>
-                        <p className="text-xl md:text-2xl opacity-100 max-w-3xl mx-auto font-medium">
-                            We&apos;d love to hear from you. Get in touch with us today.
-                        </p>
-                    </ScrollReveal>
-                </div>
-            </section>
+        <div className="bg-background min-h-screen mt-[-80px]">
+            {/* Hero Section */}
+            <PageHero
+                title="Contact Us"
+                subtitle="We'd love to hear from you. Get in touch with us today."
+            />
 
             <div className="container mx-auto px-6 py-20">
                 <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">

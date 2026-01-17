@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
+import PageHero from "@/components/PageHero";
 import { CheckCircle, FileText } from "lucide-react";
 
 export const metadata = {
@@ -9,29 +10,12 @@ export const metadata = {
 
 export default function About() {
     return (
-        <div className="bg-background min-h-screen">
+        <div className="bg-background min-h-screen mt-[-80px]">
             {/* Hero Section */}
-            <section className="bg-primary text-white py-24 relative overflow-hidden">
-                <div className="absolute inset-0 z-0 opacity-10">
-                    <Image
-                        src="/images/hero-community.png"
-                        alt="Background Pattern"
-                        fill
-                        className="object-cover"
-                    />
-                </div>
-                <div className="absolute inset-0 z-0 bg-black/20 backdrop-blur-[2px]" />
-
-                <div className="container mx-auto px-6 text-center relative z-10">
-                    <ScrollReveal>
-                        <h1 className="text-4xl md:text-6xl font-bold mb-6">About Us</h1>
-                        <div className="w-24 h-1 bg-secondary mx-auto rounded-full mb-6"></div>
-                        <p className="text-xl md:text-2xl opacity-100 max-w-3xl mx-auto font-medium">
-                            Rewriting India’s future: &quot;No Child Should Choose Between Bread and Book.&quot;
-                        </p>
-                    </ScrollReveal>
-                </div>
-            </section>
+            <PageHero
+                title="About Us"
+                subtitle='Rewriting India&apos;s future: "No Child Should Choose Between Bread and Book."'
+            />
 
             {/* The Genesis Section */}
             <section className="py-20 md:py-28">

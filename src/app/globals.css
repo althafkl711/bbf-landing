@@ -3,7 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #0E0D06;
-  --primary: #DCA54A;
+  --primary: #FE8F00;
+  --tertiary: #FEBF39;
   --secondary: #FFDD00;
   --accent: #FBB034;
 }
@@ -12,6 +13,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-tertiary: var(--tertiary);
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
   --font-sans: 'Poppins', sans-serif;
@@ -21,4 +23,30 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Poppins', sans-serif;
+}
+
+/* Sticky Footer Reveal Animation */
+.main-content-wrapper {
+  position: relative;
+  z-index: 10;
+  background: var(--background);
+}
+
+.sticky-footer {
+  z-index: 5;
+}
+
+/* Sticky footer only on lg screens (1024px and above) */
+@media (min-width: 1024px) {
+  .sticky-footer {
+    position: sticky;
+    bottom: 0;
+    min-height: 400px;
+  }
+}
+
+.reveal-section {
+  border-radius: 0 0 60px 60px;
+  position: relative;
+  z-index: 10;
 }
