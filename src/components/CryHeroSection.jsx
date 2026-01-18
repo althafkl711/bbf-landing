@@ -23,7 +23,7 @@ export default function CryHeroSection() {
             <div className="flex flex-col lg:flex-row ">
 
                 {/* Left Content - Text Section */}
-                <div className="w-full lg:w-[40%] flex flex-col justify-center px-6 md:px-12 lg:px-16 py-16 lg:py-0 relative z-10 order-2 lg:order-1">
+                <div className="w-full lg:w-[40%] flex flex-col justify-center px-6 md:px-12 lg:px-12 py-16 lg:py-0 relative z-10 order-2 lg:order-1">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -85,7 +85,7 @@ export default function CryHeroSection() {
                 </div>
 
                 {/* Right Content - Video with Yellow Patch Frame at top right */}
-                <div className="w-full lg:w-[60%] relative order-1 lg:order-2 lg:self-start">
+                <div className="w-full lg:w-[60%] relative order-1 lg:order-2 lg:self-start z-12 overflow-visible">
                     {/* Video Container with patch overlay - same dimensions */}
                     <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[500px] xl:h-[600px]">
                         {/* Video */}
@@ -108,11 +108,11 @@ export default function CryHeroSection() {
                                 top: '-4px',
                                 left: '-4px',
                                 right: '-4px',
-                                bottom: '-4px'
+                                bottom: '-34px'
                             }}
                         >
                             <Image
-                                src="/images/video2-patch.svg"
+                                src="/images/video-patch-2.png"
                                 alt="Video frame"
                                 fill
                                 className="object-cover"
