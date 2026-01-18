@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="h-[100vh] sticky-footer bg-[#0F151E]">
             {/* Donate Now Section - Inside Footer */}
-            <div className="relative bg-gradient-to-br from-[#1a2332] via-[#0F151E] to-[#0a0f15] py-20 md:py-28 overflow-hidden">
+            <div className="relative  py-20 md:py-28 overflow-hidden">
                 {/* Background decorative elements */}
                 <div className="absolute inset-0 opacity-5">
                     <div className="absolute top-10 left-10 w-40 h-40 border border-primary rounded-full" />
@@ -17,50 +17,17 @@ export default function Footer() {
 
 
                     {/* Heading */}
-                    {/* <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                        Make a Difference <br />
-                        <span className="text-secondary">Today</span>
-                    </h2> */}
+                    <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white mt-10 leading-tight">
+                        &quot;Every child deserves a chance. Be the reason they get one&quot;
+                    </h2>
 
                     {/* Description */}
-                    {/* <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-                        Your generous contribution can provide the meal that nourishes a child&apos;s body
-                        and the book that feeds their mind.
+                    {/* <p className="text-lg md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                        &quot;Every child deserves a chance. Be the reason they get one&quot;
                     </p> */}
 
 
-                    {/* CTA Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                        <Link
-                            href="/donate"
-                            className="inline-flex items-center justify-center gap-2 bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-accent transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-primary/30 hover:scale-105 group"
-                        >
-                            Donate Now
-                            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                        </Link>
-                        <Link
-                            href="/contact"
-                            className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-gray-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:border-white hover:bg-white/5 transition-all duration-300"
-                        >
-                            Contact Us
-                        </Link>
-                    </div>
-
-                    {/* Trust Badges */}
-                    <div className="flex flex-wrap justify-center gap-6 text-gray-400 text-sm">
-                        <span className="flex items-center gap-2">
-                            <span className="w-2 h-2 bg-green-500 rounded-full" />
-                            80G Certified
-                        </span>
-                        <span className="flex items-center gap-2">
-                            <span className="w-2 h-2 bg-green-500 rounded-full" />
-                            100% Transparent
-                        </span>
-                        <span className="flex items-center gap-2">
-                            <span className="w-2 h-2 bg-green-500 rounded-full" />
-                            Secure Payment
-                        </span>
-                    </div>
+                    
                 </div>
             </div>
 
@@ -109,7 +76,6 @@ export default function Footer() {
                         <h3 className="font-bold text-white mb-6">Legal</h3>
                         <ul className="space-y-4 text-sm text-gray-400">
                             <li><Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
-                            <li><Link href="/refund-policy" className="hover:text-primary transition-colors">Refund Policy</Link></li>
                             <li><Link href="/terms" className="hover:text-primary transition-colors">Terms of Service</Link></li>
                         </ul>
                     </div>

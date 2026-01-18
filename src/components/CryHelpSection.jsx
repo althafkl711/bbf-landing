@@ -45,7 +45,7 @@ export default function CryHelpSection() {
     };
 
     return (
-        <section className=" py-16 md:py-24 overflow-visible bg-[#FAFAF8]" >
+        <section className=" py-16 md:py-24 overflow-visible bg-[#FDF8F3]" >
 
 
             {/* Main content - no container on right side */}

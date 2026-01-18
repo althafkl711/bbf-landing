@@ -1,5 +1,6 @@
 import CryHeroSection from "@/components/CryHeroSection";
 import MissionSection from "@/components/MissionSection";
+import QuoteSection from "@/components/QuoteSection";
 import CryWhatWeDo from "@/components/CryWhatWeDo";
 import CryHelpSection from "@/components/CryHelpSection";
 import PresenceSection from "@/components/PresenceSection";
@@ -19,6 +20,9 @@ export default function Home() {
 
       {/* Mission Section */}
       <MissionSection />
+
+      {/* Quote Section */}
+      <QuoteSection />
 
       {/* CRY Cloned Section: What We Do */}
       <CryWhatWeDo />
