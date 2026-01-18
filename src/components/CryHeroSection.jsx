@@ -112,7 +112,7 @@ export default function CryHeroSection() {
                             }}
                         >
                             <Image
-                                src="/images/video-patch-2.png"
+                                src="/images/video-patch-3.png"
                                 alt="Video frame"
                                 fill
                                 className="object-cover"

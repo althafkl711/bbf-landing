@@ -32,7 +32,7 @@ const faqs = [
 
 export default function FAQSection() {
     return (
-        <section className="reveal-section py-20 md:py-28 ">
+        <section className="bg-[#FDF8F3] py-20 md:py-28 ">
             <div className="container mx-auto px-6">
                 {/* Header */}
                 <ScrollReveal>
@@ -69,7 +69,7 @@ export default function FAQSection() {
 
                 {/* Still have questions banner */}
                 <ScrollReveal>
-                    <div className="bg-[#F5F5F5] rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div className="bg-[#FFFFFF] rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
                         <div>
                             <h3 className="text-lg md:text-xl font-semibold text-foreground mb-2">
                                 Still have questions?

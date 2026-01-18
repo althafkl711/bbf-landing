@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 import PageHero from "@/components/PageHero";
+import VolunteerFormSection from "@/components/VolunteerFormSection";
 import { CheckCircle, FileText } from "lucide-react";
 
 export const metadata = {
@@ -171,6 +172,9 @@ export default function About() {
                     </div>
                 </div>
             </section>
+
+            {/* Volunteer Form Section */}
+            <VolunteerFormSection />
         </div>
     );
 }

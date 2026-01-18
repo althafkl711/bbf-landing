@@ -6,19 +6,19 @@ import { Heart, ChevronLeft, ChevronRight } from "lucide-react";
 
 const campaigns = [
     {
-        image: "/images/program-education.png",
+        image: "/images/s1.jpg",
         badge: null,
         title: "Educate a Child, Ignite a Future",
         subtitle: "Provides a child with a month’s education kit: school uniforms, books, and after-school tutoring",
     },
     {
-        image: "/images/program-health.png",
+        image: "/images/s2.jpg",
         badge: null,
         title: "Feed the Hungry, Nourish Dreams",
         subtitle: "Feed a Child Healthy, Nutritious Meals.",
     },
     {
-        image: "/images/program-relief.png",
+        image: "/images/s4.jpg",
         badge: null,
         title: "SEND A GIRL TO SCHOOL",
         subtitle: "If not now, then when?",

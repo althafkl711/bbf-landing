@@ -10,6 +10,7 @@ import AwardsSection from "@/components/AwardsSection";
 import StoriesSection from "@/components/StoriesSection";
 import ImpactMetricsSection from "@/components/ImpactMetricsSection";
 import FAQSection from "@/components/FAQSection";
+import VolunteerFormSection from "@/components/VolunteerFormSection";
 import CTASection from "@/components/CTASection";
 
 export default function Home() {
@@ -47,6 +48,9 @@ export default function Home() {
 
       {/* FAQ Section */}
       <FAQSection />
+
+      {/* Volunteer Form Section */}
+      <VolunteerFormSection />
 
       {/* Call to Action */}
       <CTASection />

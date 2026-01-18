@@ -71,7 +71,7 @@ export default function AwardsSection() {
     };
 
     return (
-        <section className="py-20 md:py-28 bg-[#F8F9FC] overflow-hidden">
+        <section className="py-20 md:py-28  overflow-hidden">
             <div className="container mx-auto px-6">
                 {/* Header */}
                 <ScrollReveal>
