@@ -49,9 +49,6 @@ export default function Home() {
       {/* FAQ Section */}
       <FAQSection />
 
-      {/* Volunteer Form Section */}
-      <VolunteerFormSection />
-
       {/* Call to Action */}
       <CTASection />
     </div>

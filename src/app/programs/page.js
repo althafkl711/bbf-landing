@@ -67,7 +67,7 @@ const programsData = [
             "/images/ps4-1.jpeg",
             "/images/ps4-2.jpeg",
             "/images/ps4-3.jpeg",
-            "/images/ps4-4.jpeg"
+            "/images/ps4-2.jpeg"
         ],
         bgColor: "bg-white"
     }
