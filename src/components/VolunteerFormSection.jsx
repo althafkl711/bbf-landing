@@ -3,6 +3,11 @@
 import { useState } from "react";
 import ScrollReveal from "@/components/ScrollReveal";
 
+
+
+import { database } from "@/lib/firebase";
+import { ref, push, set } from "firebase/database";
+
 export default function VolunteerFormSection() {
     const [formData, setFormData] = useState({
         name: "",
@@ -13,6 +18,7 @@ export default function VolunteerFormSection() {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
+    const [error, setError] = useState("");
 
     const handleChange = (e) => {
         setFormData({
@@ -24,13 +30,23 @@ export default function VolunteerFormSection() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setError("");
 
-        // Simulate form submission
-        await new Promise(resolve => setTimeout(resolve, 1000));
-
-        setIsSubmitting(false);
-        setSubmitted(true);
-        setFormData({ name: "", email: "", phone: "", city: "", message: "" });
+        try {
+            const volunteerRef = ref(database, 'volunteerEnquiry');
+            const newVolunteerRef = push(volunteerRef);
+            await set(newVolunteerRef, {
+                ...formData,
+                timestamp: new Date().toISOString()
+            });
+            setSubmitted(true);
+            setFormData({ name: "", email: "", phone: "", city: "", message: "" });
+        } catch (err) {
+            console.error("Error adding document: ", err);
+            setError("Something went wrong. Please try again later.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -94,6 +110,11 @@ export default function VolunteerFormSection() {
                                 </div>
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-5">
+                                    {error && (
+                                        <div className="bg-red-50 text-red-600 p-3 rounded-lg text-sm">
+                                            {error}
+                                        </div>
+                                    )}
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 mb-2">
                                             Full Name <span className="text-red-500">*</span>
