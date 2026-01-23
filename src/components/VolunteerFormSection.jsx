@@ -33,6 +33,10 @@ export default function VolunteerFormSection() {
         setError("");
 
         try {
+            if (!database) {
+                throw new Error("Database not initialized");
+            }
+
             const volunteerRef = ref(database, 'volunteerEnquiry');
             const newVolunteerRef = push(volunteerRef);
             await set(newVolunteerRef, {

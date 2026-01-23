@@ -27,6 +27,10 @@ export default function ContactForm() {
         setError("");
 
         try {
+            if (!database) {
+                throw new Error("Database not initialized");
+            }
+
             const contactRef = ref(database, 'contactUs');
             const newContactRef = push(contactRef);
             await set(newContactRef, {
