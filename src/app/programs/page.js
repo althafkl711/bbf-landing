@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 import PageHero from "@/components/PageHero";
+import ImageSlider from "@/components/ImageSlider";
 
 export const metadata = {
     title: "Our Programs | Bread and Book Foundation",
@@ -12,39 +13,62 @@ const programsData = [
     {
         title: "Education and Empowerment",
         content: [
-            "Education is the cornerstone of liberation. For a child growing up in poverty, a classroom is more than a room with desks—it’s a sanctuary of possibility. When girls and boys step into our learning centers, they step into a world where their potential is nurtured, not stifled. Imagine a young girl in a rural village, her hands gripping a tablet for the first time, her eyes widening as she explores a digital lesson on renewable energy. This isn’t just about technology; it’s about dismantling barriers.",
-            "Our focus on girls in STEM is revolutionary. In societies where girls are often sidelined, we create spaces where they can excel in science, math, and coding. These girls don’t just solve equations; they solve problems—designing clean water systems for their villages or developing apps to track crop yields. When a girl graduates from our STEM scholarship program, she becomes a torchbearer for her community, proving that brilliance knows no gender.",
-            "Empowerment also thrives beyond textbooks. For mothers trapped in cycles of poverty, our vocational training programs are lifelines. A woman learning tailoring or nursing doesn’t just earn an income—she reshapes her family’s destiny. Her children no longer skip school to work odd jobs; instead, they sit beside peers, dreaming of careers as teachers, engineers, or artists. Education, in this way, becomes a family legacy, passed down like a cherished heirloom."
+            "At Bread and Book Foundation (BBF India), education opens the door to dignity and opportunity. Through Project Vidya and Project Hope, we work to ensure that children from underserved communities are not denied learning due to poverty or lack of resources. These initiatives are designed to create supportive learning environments where children are encouraged to grow with confidence and purpose.",
+            "We provide essential educational support such as school supplies, uniforms, textbooks, and access to basic digital learning tools. Our digital literacy initiatives help children—especially those in rural and marginalized areas—develop foundational skills needed to thrive in today’s world.",
+            "BBF places strong emphasis on educating and empowering girls by promoting equal access to learning and creating safe spaces that encourage continued schooling. Alongside education, we support families through skill-based livelihood initiatives, helping build stability at home so children can remain in school. Through Project Vidya and Project Hope, education becomes a powerful foundation for lasting change for children, families, and communities."
         ],
-        image: "/images/program-education.png",
-        bgColor: "bg-[#F9F9F9]" // Added background for the first section
+        images: [
+            "/images/ps-1.png",
+            "/images/s1.jpg",
+            "/images/ps1-3.jpeg",
+            "/images/ps1-4.jpg"
+        ],
+        bgColor: "bg-[#F9F9F9]"
     },
     {
         title: "Basic needs and Immediate Relief",
         content: [
-            "A hungry child cannot focus on fractions. A sick child cannot memorize poems. This truth drives our commitment to meeting basic needs first. In slums and remote villages, we set up community kitchens where the aroma of freshly cooked meals draws children to school. These meals do more than fill stomachs—they fuel curiosity. A boy who once scavenged for scraps now solves math puzzles; a girl who fainted from hunger now leads classroom debates.",
-            "Hygiene is equally vital. In regions where clean water is scarce, our hygiene kits—filled with soap, menstrual products, and sanitizers—become shields against disease. When girls no longer miss school due to periods, classrooms grow louder with their voices. During disasters, our rapid-response teams deliver emergency supplies, but we also teach resilience: rainwater harvesting techniques, drought-resistant farming, and disaster preparedness. These lessons transform victims into survivors, ensuring communities don’t just recover—they thrive."
+            "At Bread and Book Foundation (BBF India), we believe that dignity begins with meeting basic human needs. Through our Sarva Aahaar project, we provide nutritious meals to children and families who face food insecurity, ensuring no one goes hungry during difficult times. For families living on the margins, everyday life is shaped by uncertainty—where access to food, health, warmth, and hygiene cannot be taken for granted. BBF steps in during these moments of vulnerability to provide timely support that helps children and families regain stability and security.",
+            "Our approach to immediate relief is rooted in compassion and responsiveness. Whether addressing ongoing hardships or sudden crises, we work closely with communities to ensure essential needs are met in a respectful and practical manner. By supporting households during periods of food insecurity, health challenges, seasonal extremes, or emergency situations, we help reduce the pressures that often push children out of school and families deeper into poverty.",
+            "Beyond short-term assistance, BBF’s relief efforts aim to restore a sense of normalcy and resilience. When families are supported through difficult times, children are better able to return to learning, caregivers can focus on rebuilding their livelihoods, and communities can begin to recover with confidence. Through this integrated approach, BBF ensures that immediate relief is not just a response to crisis, but a foundation for long-term well-being and opportunity."
         ],
-        image: "/images/program-relief.png",
+        images: [
+            "/images/ps2-1.jpeg",
+            "/images/ps2-2.jpeg",
+            "/images/ps2-3.jpeg",
+            "/images/ps2-4.jpeg"
+        ],
         bgColor: "bg-white"
     },
     {
         title: "Health and Special Care",
         content: [
-            "Health is the silent architect of a child’s future. A malnourished body struggles to learn; an untreated illness can derail dreams. Our mobile health clinics traverse dusty roads to reach children in forgotten corners, offering vaccinations, nutrition screenings, and lifesaving treatments. For a mother cradling a feverish child, these clinics are miracles—places where fear dissolves into relief.",
-            "Menstrual health is a battleground for dignity. In many communities, girls drop out of school when they menstruate, shrouded in shame. We combat this with education and reusable sanitary pads, turning whispered struggles into conversations about strength. A 14-year-old who once hid at home now stands tall in science class, her confidence unshaken by stigma.",
-            "For children with disabilities, our care is tailored and tender. Autistic children like Arjun, who once lived in silence, find their voices through speech therapy. Orphans in our group homes don’t just receive shelter—they find family. Caregivers teach them to cook, laugh, and trust again, proving that love can heal even the deepest wounds."
+            "Health quietly shapes every child’s ability to learn, grow, and dream. Even minor, untreated illnesses can disrupt schooling, weaken confidence, and place families under immense strain. At Bread and Book Foundation (BBF India), we recognize that educational progress is deeply connected to physical well-being, especially in rural and underserved communities where access to healthcare remains limited.",
+            "BBF’s health-related efforts focus on improving access to basic medical support through community-based initiatives. With the support of doctors and dedicated volunteers, we have conducted small-scale health awareness programs and provided essential medicinal support in rural villages. These efforts help families address common health concerns early, reducing preventable complications and easing the burden on caregivers.",
+            "As part of our evolving commitment to child well-being, BBF is working toward structured medical check-up and medicine distribution campaigns in rural areas. These initiatives aim to promote early detection, basic treatment, and health awareness—ensuring children are healthier, more consistent in school, and better equipped to thrive.",
+            "We also place importance on dignity and care for children facing additional vulnerabilities. Through health education, community engagement, and supportive interventions, BBF seeks to create safer environments where children can grow with confidence and families feel supported."
         ],
-        image: "/images/program-health.png",
+        images: [
+            "/images/ps3-1.jpeg",
+            "/images/ps3-2.jpeg",
+            "/images/ps3-3.jpeg",
+            "/images/ps3-4.jpeg"
+        ],
         bgColor: "bg-[#F9F9F9]"
     },
     {
         title: "Large-Scale Solutions",
         content: [
-            "True change demands systemic action. Our Adopt-a-Village Initiative is a tapestry of transformation. In one village, barren land now blooms with community farms. A school stands where there was once rubble, its walls echoing with children reciting alphabets. Solar panels power evening study sessions, and women lead micro-enterprises weaving textiles. This isn’t charity—it’s partnership. Villagers co-design every project, ensuring solutions are rooted in their wisdom.",
-            "Policy advocacy amplifies these efforts. We lobby governments to fund inclusive education and healthcare, turning grassroots successes into national blueprints. Collaborations with global NGOs bring innovations like AI-driven tutoring to remote schools, proving that progress knows no borders."
+            "Sustainable change requires long-term, community-led solutions. At Bread and Book Foundation (BBF India), we envision impact that goes beyond individual interventions—toward transforming entire communities through inclusive and practical development.",
+            "As part of this vision, BBF is working toward a future Adopt-a-Village Initiative, designed to support villages holistically by addressing essential needs such as shelter, access to clean water, clothing, nutrition, education, and livelihoods. This initiative aims to be built in close partnership with local communities, where residents actively participate in identifying needs, planning solutions, and sustaining progress. By grounding development in local knowledge and ownership, we hope to create models that are resilient and self-sustaining.",
+            "Looking ahead, BBF also seeks to strengthen its impact through collaboration and advocacy—working alongside government bodies, partner organizations, and supporters to scale inclusive approaches to education, health, and basic living conditions. Through these combined efforts, BBF aims to move from relief to transformation, creating pathways for villages not just to survive, but to thrive over time."
         ],
-        image: "/images/program-solutions.png",
+        images: [
+            "/images/ps4-1.jpeg",
+            "/images/ps4-2.jpeg",
+            "/images/ps4-3.jpeg",
+            "/images/ps4-4.jpeg"
+        ],
         bgColor: "bg-white"
     }
 ];
@@ -67,16 +91,7 @@ export default function Programs() {
                                 <div className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}>
                                     {/* Image Side */}
                                     <div className="w-full lg:w-1/2">
-                                        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-xl">
-                                            <Image
-                                                src={program.image}
-                                                alt={program.title}
-                                                fill
-                                                className="object-cover hover:scale-105 transition-transform duration-700"
-                                            />
-                                            {/* Overlay for depth */}
-                                            <div className="absolute inset-0 bg-black/10 ring-1 ring-black/5 rounded-2xl"></div>
-                                        </div>
+                                        <ImageSlider images={program.images} interval={3000} />
                                     </div>
 
                                     {/* Text Side */}

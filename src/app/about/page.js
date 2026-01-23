@@ -90,20 +90,23 @@ export default function About() {
 
             {/* Our Approach */}
             <section className="py-24 bg-[#F9F9F9]">
-                <div className="container mx-auto px-6 text-center max-w-4xl">
+                <div className="container mx-auto px-6 text-center max-w-6xl">
                     <ScrollReveal>
-                        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">Nourishing Bodies, Nurturing Minds</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">Nourishing Bodies. Empowering Futures</h2>
                         <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-10"></div>
                     </ScrollReveal>
 
                     <ScrollReveal delay={0.1}>
                         <p className="text-gray-700 text-lg leading-relaxed mb-8 text-left md:text-center">
-                            At BBF, we believe no child should choose between bread and books. Our community kitchens deliver daily meals to underserved regions, ensuring children arrive in classrooms nourished and ready to learn. For pregnant women and toddlers, targeted nutrition programs combat stunting and lay the foundation for healthy development.
+                            At Bread and Book Foundation (BBF India), we work at the intersection of hunger and education because a child cannot learn on an empty stomach. Through our meal support initiatives, we ensure that children from underserved communities receive nutritious food regularly, helping them stay healthy, focused, and consistent in their schooling. Our nutrition programs also support young children, addressing early-life malnutrition that can impact growth, learning ability, and overall well-being.
                         </p>
                     </ScrollReveal>
                     <ScrollReveal delay={0.2}>
                         <p className="text-gray-700 text-lg leading-relaxed mb-4 text-left md:text-center">
-                            But feeding hungry children is only the first step. We provide holistic educational support such as school uniforms, textbooks, scholarships, and after-school tutoring to remove barriers that keep marginalized students from thriving. Digital literacy hubs bridge the urban-rural divide, while safe learning spaces empower girls to reclaim their right to education. By addressing hunger and illiteracy together, we break poverty’s cycle at its roots.
+                            Alongside food security, BBF provides practical educational support to children who are most at risk of dropping out. We distribute school supplies, uniforms, and learning materials, offer scholarships where needed, and support children through basic tutoring and digital literacy initiatives. By creating access to safe learning environments—especially for girls and children from marginalized backgrounds—we help remove everyday barriers that keep education out of reach.
+                        </p>
+                        <p className="text-gray-700 text-lg leading-relaxed mb-4 text-left md:text-center">
+                            -BBF Approarch
                         </p>
                     </ScrollReveal>
                 </div>
