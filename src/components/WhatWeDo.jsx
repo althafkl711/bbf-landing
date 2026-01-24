@@ -58,7 +58,7 @@ const PushPin = ({ color }) => (
     </svg>
 );
 
-export default function CryWhatWeDo() {
+export default function WhatWeDo() {
     return (
         <section className="bg-gradient-to-b from-gray-50 to-white py-20 md:py-28 font-sans overflow-hidden">
             <div className="container mx-auto px-6">

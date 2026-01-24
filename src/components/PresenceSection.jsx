@@ -25,12 +25,12 @@ export default function PresenceSection() {
                         <div className="max-w-lg">
                             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-2">
                                 Our{" "}
-                                <span
+                                {/* <span
                                     className="text-primary"
                                     style={{ fontFamily: '"Gloria Hallelujah", cursive' }}
-                                >
+                                > */}
                                     Presence
-                                </span>
+                                {/* </span> */}
                             </h2>
                             <div className="w-20 h-1 bg-primary rounded-full mb-6"></div>
 

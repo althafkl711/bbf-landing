@@ -1,8 +1,9 @@
-import CryHeroSection from "@/components/CryHeroSection";
+import HeroSection from "@/components/HeroSection";
 import MissionSection from "@/components/MissionSection";
+import VisionMissionSection from "@/components/VisionMissionSection";
 import QuoteSection from "@/components/QuoteSection";
-import CryWhatWeDo from "@/components/CryWhatWeDo";
-import CryHelpSection from "@/components/CryHelpSection";
+import WhatWeDo from "@/components/WhatWeDo";
+import HelpSection from "@/components/HelpSection";
 import PresenceSection from "@/components/PresenceSection";
 import HeroSliderSection from "@/components/HeroSliderSection";
 import ProgramsSection from "@/components/ProgramsSection";
@@ -16,20 +17,23 @@ import CTASection from "@/components/CTASection";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* CRY-style Hero Section */}
-      <CryHeroSection />
+      {/* Hero Section */}
+      <HeroSection />
 
       {/* Mission Section */}
       <MissionSection />
 
+      {/* Vision & Mission Section */}
+      <VisionMissionSection />
+
       {/* Quote Section */}
       <QuoteSection />
 
-      {/* CRY Cloned Section: What We Do */}
-      <CryWhatWeDo />
+      {/* What We Do */}
+      <WhatWeDo />
 
-      {/* CRY Cloned Section: How do you want to help */}
-      <CryHelpSection />
+      {/* How do you want to help */}
+      <HelpSection />
 
       {/* Our Presence Section */}
       <PresenceSection />

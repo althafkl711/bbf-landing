@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Heart } from "lucide-react";
 import { motion } from "framer-motion";
 
-export default function CryHeroSection() {
+export default function HeroSection() {
     const videoRef = useRef(null);
 
     useEffect(() => {
@@ -35,7 +35,7 @@ export default function CryHeroSection() {
                                 className="inline-block text-tertiary"
                                 style={{
                                     fontFamily: '"Gloria Hallelujah", cursive',
-                                    
+
                                 }}
                             >
                                 brighter
@@ -45,7 +45,7 @@ export default function CryHeroSection() {
                                 className="inline-block text-tertiary"
                                 style={{
                                     fontFamily: '"Gloria Hallelujah", cursive',
-                                    
+
                                 }}
                             >
                                 childhoods
@@ -58,7 +58,7 @@ export default function CryHeroSection() {
                         <Link
                             href="/contact"
                             className="inline-flex items-center bg-primary text-white gap-2 text-black font-semibold px-6 py-3 rounded-lg transition-all hover:shadow-lg hover:-translate-y-1"
-                            
+
                         >
                             <Heart size={18} className="fill-current text-white" />
                             Yes! I Want To Help!

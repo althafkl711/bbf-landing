@@ -136,7 +136,7 @@ export default function Volunteer() {
             </section>
 
             {/* Testimonials */}
-            <section className="py-24 bg-white">
+            {/* <section className="py-24 bg-white">
                 <div className="container mx-auto px-6">
                     <ScrollReveal>
                         <div className="text-center mb-16">
@@ -179,7 +179,7 @@ export default function Volunteer() {
                         </ScrollReveal>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Volunteer Form Section */}
             <VolunteerFormSection />

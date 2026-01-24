@@ -36,15 +36,15 @@ export default function About() {
                         <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">The Genesis of Bread and Book Foundation</h3>
                         <div className="w-24 h-1 bg-primary rounded-full mb-6"></div>
                         <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
-                            <p>
-                                The Bread and Book Foundation (BBF) was born from a simple yet radical truth: hunger, ignorance, and inequality are not isolated crises—they are interlinked chains holding millions back from their potential.
-                            </p>
-                            <p>
-                                Founded in 2021 by a passionate collective of professional social workers, BBF is a non-government organization dedicated to uplifting India’s most vulnerable communities. We confront the interconnected challenges of hunger, educational disparity, and systemic inequity through innovative, sustainable solutions designed to empower individuals and dismantle cycles of poverty.
-                            </p>
-                            <p>
-                                Guided by the vision of an India where no one is limited by hunger, ignorance, or inequality, we champion transparency and accountability, underscored by our 80G and 12A certifications.
-                            </p>
+                               <p>
+                                    The Bread and Book Foundation (BBF) was founded on the belief that hunger, educational deprivation, and inequality are interconnected challenges that must be addressed together to create lasting change.
+                                </p>
+                                <p>
+                                    Established in 2021, BBF emerged from a collective vision of professional social workers committed to supporting vulnerable communities across India. The foundation was initiated by Founder Sreelekha Chandran, a teacher from Thrissur, Kerala, whose field experience highlighted critical gaps in child-focused education. Guided by the principle that no child should choose between bread and books, this idea evolved into a structured and scalable social initiative.
+                                </p>
+                                <p>
+                                    From grassroots, volunteer-led efforts to a recognized non-governmental organization by 2024, BBF has grown through consistent impact and collaboration. Today, with 80G and 12A certifications, BBF delivers integrated programs in nutrition, education, and basic needs—empowering children and families to break cyc                            
+                               </p>
                         </div>
                     </ScrollReveal>
                 </div>
@@ -66,7 +66,7 @@ export default function About() {
                                 <h3 className="text-3xl font-bold text-primary mb-6">Our Vision</h3>
                                 <div className="w-24 h-1 bg-primary rounded-full mb-6"></div>
                                 <p className="text-gray-700 leading-relaxed text-lg">
-                                    An India where every child is free from hunger, ignorance, and inequality; where communities at every level are empowered with education, opportunities, and dignity. We envision a nation where grassroots challenges are met with sustainable solutions and every individual—irrespective of their background—has the resources to realize their full potential.
+                                    An India where no child is forced to choose between survival and education, and where hunger, ignorance, and inequality no longer define a person’s future. We envision empowered communities where children grow with nourishment, learning, and dignity, and where sustainable grassroots solutions enable every individual—regardless of background—to realize their full potential.
                                 </p>
                             </div>
                         </ScrollReveal>
@@ -80,7 +80,7 @@ export default function About() {
                                 <h3 className="text-3xl font-bold mb-6">Our Mission</h3>
                                 <div className="w-24 h-1 bg-secondary rounded-full mb-6"></div>
                                 <p className="opacity-95 leading-relaxed text-lg">
-                                    To realize the vision, Bread and Book Foundation will tackle the root causes of poverty and inequality by addressing grassroots challenges through education, nourishment, and holistic community development. We aim to foster meaningful partnerships with local communities, government bodies, and national initiatives to create sustainable solutions, empowering individuals and transforming lives for lasting impact.
+                                    Bread and Book Foundation is committed to breaking cycles of poverty at the grassroots by addressing the fundamental needs of children and vulnerable communities. Through education access, nutrition support, and holistic community development, we focus on long-term empowerment over short-term relief. By working with communities, institutions, and government initiatives, BBF builds sustainable systems that protect childhood, strengthen families, and create lasting change across generations.
                                 </p>
                             </div>
                         </ScrollReveal>

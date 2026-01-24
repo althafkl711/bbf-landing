@@ -4,7 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export default function MissionSection() {
     return (
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-[#FDF8F3]">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
@@ -25,13 +25,22 @@ export default function MissionSection() {
                     </ScrollReveal>
 
                     {/* Right Image Placeholder */}
-                    <ScrollReveal delay={0.2} className="relative h-[400px] ">
-                        <Image
-                            src="/images/waw-2.png"
-                            alt="Mission Visualization"
-                            fill
-                            className="object-contain"
-                        />
+                    <ScrollReveal delay={0.2}>
+                        <div className="relative w-full h-[500px]">
+                            {/* Image Grid - 2x3 layout */}
+                            <div className="grid grid-cols-2 gap-4 h-full">
+                               
+                                {/* Bottom Right */}
+                                <div className=" overflow-hidden">
+                                    <Image
+                                        src="/images/mv-1.png"
+                                        alt="Community development"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            </div>
+                        </div>
                     </ScrollReveal>
                 </div>
             </div>

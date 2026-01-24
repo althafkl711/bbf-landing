@@ -24,6 +24,7 @@ export default function Header() {
         { name: "Home", href: "/" },
         { name: "Who we are", href: "/about" },
         { name: "What we do", href: "/programs" },
+        { name: "Gallery", href: "/gallery" },
         { name: "Volunteer", href: "/volunteer" },
         { name: "How you can help", href: "/contact" },
     ];

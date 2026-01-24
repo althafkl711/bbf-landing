@@ -12,7 +12,7 @@ const campaigns = [
         subtitle: "Provides a child with a month’s education kit: school uniforms, books, and after-school tutoring",
     },
     {
-        image: "/images/s2.jpg",
+        image: "/images/sw3.jpeg",
         badge: null,
         title: "Feed the Hungry, Nourish Dreams",
         subtitle: "Feed a Child Healthy, Nutritious Meals.",
@@ -31,7 +31,7 @@ const campaigns = [
     },
 ];
 
-export default function CryHelpSection() {
+export default function HelpSection() {
     const scrollRef = useRef(null);
 
     const scroll = (direction) => {
@@ -64,7 +64,7 @@ export default function CryHelpSection() {
 
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-snug mb-3">
                         How do you want to {" "}
-                        <span
+                        {/* <span
                             className="relative inline-block text-primary"
                             style={{
 
@@ -72,9 +72,9 @@ export default function CryHelpSection() {
                                 fontWeight: 'bold',
 
                             }}
-                        >
-                            help?
-                        </span>
+                        > */}
+                        help?
+                        {/* </span> */}
 
                     </h2>
                     <div className="w-20 h-1 bg-primary rounded-full mb-6"></div>
