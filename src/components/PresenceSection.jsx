@@ -52,13 +52,13 @@ export default function PresenceSection() {
                                 ))}
                             </div>
 
-                            <Link
+                            {/* <Link
                                 href="/contact"
                                 className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-lg transition-all hover:shadow-lg hover:-translate-y-1"
                             >
                                 <Heart size={18} className="fill-current" />
                                 Donate Now
-                            </Link>
+                            </Link> */}
                         </div>
                     </ScrollReveal>
 

@@ -108,7 +108,7 @@ export default function Header() {
             </header>
 
             {/* Mobile Header - Island Style */}
-            <header className="lg:hidden fixed top-0 w-full z-50 justify-center px-4 pt-4">
+            <header className="lg:hidden fixed top-0 w-full z-50 justify-center px-3 pt-3">
                 <div
                     style={{
                         width: scrollProgress > 0.1 ? '100%' : '100%',
@@ -125,7 +125,7 @@ export default function Header() {
                     <Link href="/" className="text-2xl font-bold text-primary flex items-center gap-2">
                         <img
                             style={{
-                                height: `${40 - scrollProgress * 4}px`,
+                                height: `${40}px`,
                                 transition: 'height 0.8s cubic-bezier(0.4, 0, 0.2, 1)'
                             }}
                             src="/images/logo.png"
