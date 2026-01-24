@@ -107,17 +107,30 @@ export default function Header() {
                 </div>
             </header>
 
-            {/* Mobile Header - Full Width, No Island */}
-            <header
-                className={`lg:hidden fixed top-0 w-full z-50 transition-all duration-300 ${scrollProgress > 0.1
-                    ? "bg-white  shadow-md"
-                    : "bg-white"
-                    }`}
-            >
-                <div className="w-full px-4 py-3 flex justify-between items-center">
+            {/* Mobile Header - Island Style */}
+            <header className="lg:hidden fixed top-0 w-full z-50 justify-center px-4 pt-4">
+                <div
+                    style={{
+                        width: scrollProgress > 0.1 ? '100%' : '100%',
+                        padding: `${12}px ${12}px`,
+                        backgroundColor: `rgba(255, 255, 255, ${100})`,
+                        borderRadius: `${14 - scrollProgress * 2}px`,
+                        boxShadow: '0 20px 28px rgba(0, 0, 0, 0.2)',
+                        transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
+                        margin: '0 auto',
+                    }}
+                    className="flex items-center justify-between border border-gray-200/50"
+                >
                     {/* Logo */}
                     <Link href="/" className="text-2xl font-bold text-primary flex items-center gap-2">
-                        <img className="h-10" src="/images/logo.png" alt="Logo" />
+                        <img
+                            style={{
+                                height: `${40 - scrollProgress * 4}px`,
+                                transition: 'height 0.8s cubic-bezier(0.4, 0, 0.2, 1)'
+                            }}
+                            src="/images/logo.png"
+                            alt="Logo"
+                        />
                     </Link>
 
                     {/* Mobile Menu Button */}
@@ -125,13 +138,21 @@ export default function Header() {
                         className="text-foreground p-2"
                         onClick={() => setIsOpen(!isOpen)}
                     >
-                        {isOpen ? <X size={28} /> : <Menu size={28} />}
+                        {isOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
                 </div>
 
                 {/* Mobile Nav Dropdown */}
                 {isOpen && (
-                    <div className="absolute top-full left-0 w-full bg-white border-t border-gray-100 shadow-lg p-6 flex flex-col gap-4 animate-in slide-in-from-top-2">
+                    <div
+                        style={{
+                            width: scrollProgress > 0.1 ? '100%' : '100%',
+                            margin: '0 auto',
+                            marginTop: '8px',
+                            borderRadius: '12px',
+                        }}
+                        className="bg-white border border-gray-200/50 shadow-2xl p-6 flex flex-col gap-4 animate-in slide-in-from-top-2"
+                    >
                         {navLinks.map((link) => (
                             <Link
                                 key={link.name}
@@ -147,7 +168,7 @@ export default function Header() {
                         ))}
                         <Link
                             href="/contact"
-                            className="bg-primary text-white px-6 py-3 rounded-full font-semibold text-center hover:bg-accent transition-all"
+                            className="bg-primary text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-accent transition-all shadow-lg"
                             onClick={() => setIsOpen(false)}
                         >
                             Donate Now

@@ -23,17 +23,17 @@ export default function VisionMissionSection() {
 
                             {/* Vision */}
                             <div className="space-y-4">
-                                <h3 className="text-2xl font-bold text-primary">Vision</h3>
+                                <h3 className="text-xl md:text-2xl font-bold text-primary">Vision</h3>
                                
-                                <p className="text-gray-700 leading-relaxed text-lg">
+                                <p className="text-gray-700 text-sm md:text-base leading-relaxed ">
                                     An India where no child is denied education due to hunger or hardship, and where every child grows with dignity, opportunity, and hope for a better future.
                                 </p>
                             </div>
 
                             {/* Mission */}
                             <div className="space-y-4">
-                                <h3 className="text-2xl font-bold text-primary">Mission</h3>
-                                <p className="text-gray-700 leading-relaxed text-lg">
+                                <h3 className="text-xl md:text-2xl font-bold text-primary">Mission</h3>
+                                <p className="text-gray-700 leading-relaxed text-sm md:text-base">
                                     To break cycles of poverty by empowering children and vulnerable communities through education, nutrition, and holistic grassroots development—focusing on long-term impact, community participation, and sustainable change over short-term relief.
                                 </p>
                             </div>

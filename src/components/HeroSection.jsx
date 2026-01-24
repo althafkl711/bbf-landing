@@ -18,7 +18,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <section className="relative min-h-[80vh] bg-white overflow-hidden">
+        <section className="relative min-h-[50vh] md:min-h-[80vh] bg-white overflow-hidden">
             {/* Main Content Container */}
             <div className="flex flex-col lg:flex-row ">
 
