@@ -10,19 +10,19 @@ const stories = [
         id: "story-1",
         title: "For the First Time, My Child Holds a Book",
         description: `In the Hinotiya settlement of Bhopal, education was never part of life. For generations, no child from the Fakir community had ever gone to school.`,
-        image: "/images/slide-one.jpg",
+        image: "/images/bopal-c.jpeg",
     },
     {
         id: "story-2",
         title: "Hope Reached Srinagar Rural Colony",
         description: `In Srinagar Rural Colony, daily life is a constant struggle. Most families survive on irregular daily-wage work, and when work is unavailable, hunger quietly enters their homes.`,
-        image: "/images/slide-two.jpg",
+        image: "/images/srinagar.jpeg",
     },
     {
         id: "story-3",
         title: "Education Saved Her from a Child Marriage",
         description: `At just 14 years old, Sunita’s life was about to change forever. In her community, girls are often married early — out of fear, poverty, and social pressure.`,
-        image: "/images/slide-three.jpg",
+        image: "/images/female.jpeg",
     },
 ];
 
