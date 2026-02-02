@@ -6,31 +6,35 @@ import { ChevronLeft, ChevronRight, Award } from "lucide-react";
 
 // Awards data - each award has its own content
 const awards = [
-    {
-        id: 1,
-        title: "Best NGO 2023",
-        subtitle: "Social Impact Awards",
-        leftTitle: "We've got",
-        leftHighlight: "Recognition",
-        description: "Being recognized for our work in uplifting communities means the world to us. It validates our mission and inspires us to do more.",
-    },
-    {
-        id: 2,
-        title: "80G Certified",
-        subtitle: "Tax Exemption",
-        leftTitle: "We've got",
-        leftHighlight: "Certifications",
-        description: "Our 80G certification ensures your donations are tax-deductible, giving you an added benefit while supporting a noble cause.",
-    },
-    {
-        id: 3,
-        title: "Community Hero",
-        subtitle: "Kerala State Award",
-        leftTitle: "We've got",
-        leftHighlight: "Awards",
-        description: "Recognized by the state of Kerala for our outstanding contributions to child welfare and community development.",
-    },
+  {
+    id: 1,
+    title: "12A Certified",
+    subtitle: "Charitable Organization",
+    leftTitle: "We are",
+    leftHighlight: "Recognized",
+    description:
+      "Our 12A certification formally recognizes us as a charitable organization, enabling us to operate transparently and reinvest all resources into community upliftment.",
+  },
+  {
+    id: 2,
+    title: "80G Certified",
+    subtitle: "Tax Exemption",
+    leftTitle: "We are",
+    leftHighlight: "Tax-Compliant",
+    description:
+      "With 80G certification, donations made to us are eligible for tax exemption, allowing supporters to give back while receiving tax benefits.",
+  },
+  {
+    id: 3,
+    title: "NGO DARPAN Registered",
+    subtitle: "NITI Aayog, Government of India",
+    leftTitle: "We are",
+    leftHighlight: "Government-Registered",
+    description:
+      "Being registered on the NGO DARPAN portal under NITI Aayog strengthens our credibility and ensures alignment with Government of India guidelines.",
+  },
 ];
+
 
 export default function AwardsSection() {
     const [activeAward, setActiveAward] = useState(0);

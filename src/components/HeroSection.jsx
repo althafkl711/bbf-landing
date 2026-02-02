@@ -3,7 +3,6 @@
 import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Heart } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
@@ -60,8 +59,8 @@ export default function HeroSection() {
                             className="inline-flex items-center bg-primary text-white gap-2 text-black font-semibold px-6 py-3 rounded-lg transition-all hover:shadow-lg hover:-translate-y-1"
 
                         >
-                            <Heart size={18} className="fill-current text-white" />
-                            Yes! I Want To Help!
+                            
+                            Yes, I Want To Help!
                         </Link>
                     </motion.div>
 
@@ -98,7 +97,7 @@ export default function HeroSection() {
                             playsInline
                             poster="/images/slide-one.jpg"
                         >
-                            <source src="/images/cry-hero-video.mp4" type="video/mp4" />
+                            <source src="/images/hero-video.mp4" type="video/mp4" />
                         </video>
 
                         {/* Video Patch Frame - overlays video with slight offset to cover edges */}
@@ -112,7 +111,7 @@ export default function HeroSection() {
                             }}
                         >
                             <Image
-                                src="/images/video-patch-3.png"
+                                src="/images/video-p-4.png"
                                 alt="Video frame"
                                 fill
                                 className="object-cover"

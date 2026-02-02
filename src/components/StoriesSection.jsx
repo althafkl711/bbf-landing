@@ -2,122 +2,83 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 const stories = [
     {
-        id: 1,
-        title: "A Meal That Changed Rahul's Day",
-        description: "For 8-year-old Rahul, a warm lunch was a distant dream until our food program reached his school. Now, he attends classes regularly, fueled by nutrition and hope.",
+        id: "story-1",
+        title: "For the First Time, My Child Holds a Book",
+        description: `In the Hinotiya settlement of Bhopal, education was never part of life. For generations, no child from the Fakir community had ever gone to school.`,
         image: "/images/slide-one.jpg",
     },
     {
-        id: 2,
-        title: "Priya's Journey to Literacy",
-        description: "Priya was the first in her family to touch a book. With our library initiative, she has devoured over 50 books this year and dreams of becoming a teacher.",
+        id: "story-2",
+        title: "Hope Reached Srinagar Rural Colony",
+        description: `In Srinagar Rural Colony, daily life is a constant struggle. Most families survive on irregular daily-wage work, and when work is unavailable, hunger quietly enters their homes.`,
         image: "/images/slide-two.jpg",
     },
     {
-        id: 3,
-        title: "Empowering Mothers, Building Futures",
-        description: "Our skill development workshops gave Sunita the tools to start her own tailoring business, securing a stable income for her children's education.",
+        id: "story-3",
+        title: "Education Saved Her from a Child Marriage",
+        description: `At just 14 years old, Sunita’s life was about to change forever. In her community, girls are often married early — out of fear, poverty, and social pressure.`,
         image: "/images/slide-three.jpg",
     },
 ];
 
 export default function StoriesSection() {
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    const nextSlide = () => {
-        setCurrentIndex((prev) => (prev + 1) % stories.length);
-    };
-
-    const prevSlide = () => {
-        setCurrentIndex((prev) => (prev - 1 + stories.length) % stories.length);
-    };
-
     return (
-        <section className="py-20 ">
+        <section className="py-20 bg-gray-50">
             <div className="container mx-auto px-6">
                 {/* Section Header */}
-                <div className="text-center mb-12">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#2C2C2C] mb-4">Stories & Updates</h2>
+                <div className="text-center mb-16">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#2C2C2C] mb-4">Stories of Change</h2>
                     <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+                    <p className="max-w-2xl mx-auto mt-6 text-gray-600">
+                        Real stories of impact from the communities we serve.
+                    </p>
                 </div>
 
-                {/* Carousel Container */}
-                <div className="relative max-w-6xl mx-auto">
-                    {/* Navigation Buttons - Awards style */}
-                    <div className="absolute left-1/2 -translate-x-1/2 -bottom-4 z-20 flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-lg">
-                        <button
-                            onClick={prevSlide}
-                            className="p-2 text-gray-400 hover:text-primary transition-colors"
+                {/* Grid Layout */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    {stories.map((story) => (
+                        <motion.div
+                            key={story.id}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5 }}
+                            className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col"
                         >
-                            <ChevronLeft size={20} />
-                        </button>
-                        <div className="w-16 h-px bg-primary" />
-                        <button
-                            onClick={nextSlide}
-                            className="p-2 text-primary hover:text-accent transition-colors"
-                        >
-                            <ChevronRight size={20} />
-                        </button>
-                    </div>
+                            {/* Card Image */}
+                            <div className="relative h-64 overflow-hidden">
+                                <Image
+                                    src={story.image}
+                                    alt={story.title}
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            </div>
 
-                    {/* Slide Content */}
-                    <div className="overflow-hidden relative min-h-[500px] md:min-h-[400px]">
-                        <AnimatePresence mode="wait">
-                            <motion.div
-                                key={currentIndex}
-                                initial={{ opacity: 0, x: 50 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                exit={{ opacity: 0, x: -50 }}
-                                transition={{ duration: 0.5 }}
-                                className="w-full h-full"
-                            >
-                                <div className="bg-white rounded-[1rem] overflow-hidden  flex flex-col md:flex-row h-full md:h-[450px]">
-                                    {/* Text Side (Left - 35-40%) */}
-                                    <div className="w-full md:w-[40%] bg-primary p-8 md:p-12 flex flex-col justify-center text-white relative">
-                                        {/* Decorative element possibly? */}
-                                        <div className="space-y-6">
-                                            <h3 className="text-2xl md:text-3xl font-bold leading-tight">
-                                                {stories[currentIndex].title}
-                                            </h3>
-                                            <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                                                {stories[currentIndex].description}
-                                            </p>
-                                            <button className="bg-white text-primary px-8 py-3 rounded-full font-semibold text-sm hover:bg-white transition-colors inline-block w-max mt-4">
-                                                Know More
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    {/* Image Side (Right - 60-65%) */}
-                                    <div className="w-full md:w-[60%] relative h-[250px] md:h-full">
-                                        <Image
-                                            src={stories[currentIndex].image}
-                                            alt={stories[currentIndex].title}
-                                            fill
-                                            className="object-cover"
-                                        />
-                                    </div>
-                                </div>
-                            </motion.div>
-                        </AnimatePresence>
-                    </div>
-
-                    {/* Indicators */}
-                    <div className="flex justify-center gap-2 mt-8">
-                        {stories.map((_, idx) => (
-                            <button
-                                key={idx}
-                                onClick={() => setCurrentIndex(idx)}
-                                className={`h-2 rounded-full transition-all duration-300 ${currentIndex === idx ? "w-8 bg-primary" : "w-2 bg-gray-300"}`}
-                            />
-                        ))}
-                    </div>
-
+                            {/* Card Content */}
+                            <div className="p-8 flex-1 flex flex-col">
+                                <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
+                                    {story.title}
+                                </h3>
+                                <p className="text-gray-600 mb-6 line-clamp-3 leading-relaxed flex-1">
+                                    {story.description}
+                                </p>
+                                <Link
+                                    href={`/programs#${story.id}`}
+                                    className="text-primary font-semibold group-hover:text-primary/80 transition-colors flex items-center gap-2 mt-auto"
+                                >
+                                    Read Full Story
+                                    <span className="text-xl">→</span>
+                                </Link>
+                            </div>
+                        </motion.div>
+                    ))}
                 </div>
             </div>
         </section>

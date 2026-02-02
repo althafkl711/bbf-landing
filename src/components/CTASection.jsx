@@ -4,7 +4,7 @@ import ScrollImageSequence from "@/components/ScrollImageSequence";
 
 export default function CTASection() {
     return (
-        <section className="mx-10 my-16 py-32 bg-black text-white text-center relative overflow-hidden rounded-2xl">
+        <section className="mx-10 my-16 py-32 bg-black text-white text-center relative overflow-hidden ">
             {/* Scroll Video Background */}
             <div className="absolute inset-0 z-0 opacity-20 transform scale-100">
                 <ScrollImageSequence

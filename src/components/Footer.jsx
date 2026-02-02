@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin, Heart, ArrowRight } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, ArrowRight } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -90,7 +90,7 @@ export default function Footer() {
                             href="/donate"
                             className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-accent transition-all shadow-lg hover:shadow-xl w-full justify-center"
                         >
-                            Donate Now <Heart size={16} fill="white" />
+                            Donate Now
                         </Link>
                     </div>
                 </div>

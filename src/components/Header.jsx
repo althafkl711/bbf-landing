@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
@@ -97,11 +97,11 @@ export default function Header() {
                             </Link>
                         ))}
                         <Link
-                            href="/contact"
+                            href="/donate"
                             className={`bg-primary text-white rounded-lg font-semibold hover:bg-accent transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2 whitespace-nowrap ${isScrolled ? "px-5 py-2 text-sm" : "px-6 py-2.5"
                                 }`}
                         >
-                            Donate <Heart size={isScrolled ? 14 : 16} fill="white" />
+                            Donate
                         </Link>
                     </nav>
                 </div>
@@ -167,7 +167,7 @@ export default function Header() {
                             </Link>
                         ))}
                         <Link
-                            href="/contact"
+                            href="/donate"
                             className="bg-primary text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-accent transition-all shadow-lg"
                             onClick={() => setIsOpen(false)}
                         >

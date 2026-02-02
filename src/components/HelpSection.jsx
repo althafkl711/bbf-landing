@@ -8,19 +8,19 @@ const campaigns = [
     {
         image: "/images/s1.jpg",
         badge: null,
-        title: "Educate a Child, Ignite a Future",
+        title: "From Classroom to Confidence",
         subtitle: "Provides a child with a month’s education kit: school uniforms, books, and after-school tutoring",
     },
     {
         image: "/images/sw3.jpeg",
         badge: null,
-        title: "Feed the Hungry, Nourish Dreams",
+        title: "Because No Child Should Learn on an Empty Stomach",
         subtitle: "Feed a Child Healthy, Nutritious Meals.",
     },
     {
         image: "/images/s4.jpg",
         badge: null,
-        title: "SEND A GIRL TO SCHOOL",
+        title: "Send a Girl to School",
         subtitle: "If not now, then when?",
     },
     {
@@ -106,11 +106,11 @@ export default function HelpSection() {
                                 className="flex-shrink-0 w-[280px] md:w-[300px] group"
                             >
                                 <div
-                                    className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow h-full"
+                                    className="bg-white rounded-md overflow-hidden shadow-sm hover:shadow-md transition-shadow h-full"
                                     style={{ borderBottom: '4px solid #FFD94C' }}
                                 >
                                     {/* Image Container */}
-                                    <div className="relative h-48 w-full overflow-hidden">
+                                    <div className="relative h-62 w-full overflow-hidden">
                                         <img
                                             src={item.image}
                                             alt={item.title}

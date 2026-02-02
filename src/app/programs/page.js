@@ -3,6 +3,7 @@ import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 import PageHero from "@/components/PageHero";
 import ImageSlider from "@/components/ImageSlider";
+import ImpactStories from "@/components/ImpactStories";
 
 export const metadata = {
     title: "Our Programs | Bread and Book Foundation",
@@ -117,6 +118,9 @@ export default function Programs() {
                 ))}
             </div>
 
+
+            {/* Impact Stories Section */}
+            <ImpactStories />
 
             {/* CTA */}
             <section className="py-20 bg-accent/10">

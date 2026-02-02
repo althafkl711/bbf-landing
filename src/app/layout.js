@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         className={`antialiased bg-[#0F151E] text-foreground flex flex-col min-h-screen font-sans`}
       >
         {/* Main Content Wrapper - sits above footer for reveal effect */}
-        <div className="main-content-wrapper rounded-b-4xl">
+        <div className="main-content-wrapper rounded-b-4xl overflow-hidden">
           <Header />
           <main className="flex-grow pt-20">
             {children}
