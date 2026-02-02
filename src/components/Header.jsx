@@ -2,13 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrollProgress, setScrollProgress] = useState(0);
     const pathname = usePathname();
+    const [activeSubmenu, setActiveSubmenu] = useState(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,7 +24,16 @@ export default function Header() {
     const navLinks = [
         { name: "Home", href: "/" },
         { name: "Who we are", href: "/about" },
-        { name: "What we do", href: "/programs" },
+        {
+            name: "What we do",
+            href: "/programs",
+            submenu: [
+                { name: "Education & Empowerment", href: "/programs#education" },
+                { name: "Basic Needs & Relief", href: "/programs#relief" },
+                { name: "Health & Special Care", href: "/programs#health" },
+                { name: "Large-Scale Solutions", href: "/programs#solutions" },
+            ]
+        },
         { name: "Gallery", href: "/gallery" },
         { name: "Volunteer", href: "/volunteer" },
         { name: "How you can help", href: "/contact" },
@@ -84,17 +94,38 @@ export default function Header() {
                         className="flex items-center"
                     >
                         {navLinks.map((link) => (
-                            <Link
-                                key={link.name}
-                                href={link.href}
-                                className={`transition-all duration-300 hover:text-primary whitespace-nowrap ${isScrolled ? "text-sm" : "text-md"
-                                    } ${pathname === link.href
-                                        ? "text-primary font-bold"
-                                        : "text-foreground font-medium"
-                                    }`}
-                            >
-                                {link.name}
-                            </Link>
+                            <div key={link.name} className="relative group">
+                                <Link
+                                    href={link.href}
+                                    className={`transition-all duration-300 hover:text-primary whitespace-nowrap flex items-center gap-1 ${isScrolled ? "text-sm" : "text-md"
+                                        } ${pathname === link.href
+                                            ? "text-primary font-bold"
+                                            : "text-foreground font-medium"
+                                        }`}
+                                >
+                                    {link.name}
+                                    {link.submenu && (
+                                        <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300" />
+                                    )}
+                                </Link>
+
+                                {/* Dropdown Menu */}
+                                {link.submenu && (
+                                    <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 overflow-hidden">
+                                        <div className="py-2">
+                                            {link.submenu.map((subLink) => (
+                                                <Link
+                                                    key={subLink.name}
+                                                    href={subLink.href}
+                                                    className="block px-4 py-3 text-sm text-gray-600 hover:bg-gray-50 hover:text-primary transition-colors"
+                                                >
+                                                    {subLink.name}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         ))}
                         <Link
                             href="/donate"
@@ -150,21 +181,63 @@ export default function Header() {
                             margin: '0 auto',
                             marginTop: '8px',
                             borderRadius: '12px',
+                            maxHeight: '80vh',
+                            overflowY: 'auto'
                         }}
                         className="bg-white border border-gray-200/50 shadow-2xl p-6 flex flex-col gap-4 animate-in slide-in-from-top-2"
                     >
                         {navLinks.map((link) => (
-                            <Link
-                                key={link.name}
-                                href={link.href}
-                                className={`text-lg ${pathname === link.href
-                                    ? "text-primary font-bold"
-                                    : "text-foreground font-medium"
-                                    }`}
-                                onClick={() => setIsOpen(false)}
-                            >
-                                {link.name}
-                            </Link>
+                            <div key={link.name} className="flex flex-col">
+                                <div className="flex items-center justify-between py-2">
+                                    <Link
+                                        href={link.href}
+                                        className={`text-lg flex-grow ${pathname === link.href
+                                            ? "text-primary font-bold"
+                                            : "text-foreground font-medium"
+                                            }`}
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        {link.name}
+                                    </Link>
+
+                                    {link.submenu && (
+                                        <button
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                setActiveSubmenu(activeSubmenu === link.name ? null : link.name);
+                                            }}
+                                            className="p-2 text-gray-500 hover:text-primary transition-colors"
+                                        >
+                                            <ChevronDown
+                                                size={20}
+                                                className={`transition-transform duration-300 ${activeSubmenu === link.name ? "rotate-180" : ""
+                                                    }`}
+                                            />
+                                        </button>
+                                    )}
+                                </div>
+
+                                {/* Mobile Submenu */}
+                                {link.submenu && (
+                                    <div
+                                        className={`overflow-hidden transition-all duration-300 ease-in-out ${activeSubmenu === link.name ? "max-h-96 opacity-100 mb-4" : "max-h-0 opacity-0"
+                                            }`}
+                                    >
+                                        <div className="flex flex-col gap-3 ml-4 border-l-2 border-primary/20 pl-4">
+                                            {link.submenu.map((subLink) => (
+                                                <Link
+                                                    key={subLink.name}
+                                                    href={subLink.href}
+                                                    className="text-base text-gray-500 hover:text-primary transition-colors py-1"
+                                                    onClick={() => setIsOpen(false)}
+                                                >
+                                                    {subLink.name}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         ))}
                         <Link
                             href="/donate"

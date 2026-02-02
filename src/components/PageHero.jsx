@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export default function PageHero({ title, subtitle }) {
     return (
-        <section className="text-white py-24 h-[50vh] relative ">
+        <section className="text-white py-24 h-[35vh] md:h-[50vh] relative ">
             {/* Background Image */}
             <div className="absolute w-full h-full inset-0 z-0 ">
                 <Image

@@ -12,11 +12,12 @@ export const metadata = {
 
 const programsData = [
     {
+        id: "education",
         title: "Education and Empowerment",
         content: [
             "At Bread and Book Foundation (BBF India), education opens the door to dignity and opportunity. Through Project Vidya and Project Hope, we work to ensure that children from underserved communities are not denied learning due to poverty or lack of resources. These initiatives are designed to create supportive learning environments where children are encouraged to grow with confidence and purpose.",
             "We provide essential educational support such as school supplies, uniforms, textbooks, and access to basic digital learning tools. Our digital literacy initiatives help children—especially those in rural and marginalized areas—develop foundational skills needed to thrive in today’s world.",
-            <p>BBF places strong emphasis on educating and empowering girls by promoting equal access to learning and creating safe spaces that encourage continued schooling. Alongside education, we support families through skill-based livelihood initiatives, helping build stability at home so children can remain in school. Through <strong>Project Vidya</strong> and <strong>Project Hope</strong>, education becomes a powerful foundation for lasting change for children, families, and communities.</p>
+            <>BBF places strong emphasis on educating and empowering girls by promoting equal access to learning and creating safe spaces that encourage continued schooling. Alongside education, we support families through skill-based livelihood initiatives, helping build stability at home so children can remain in school. Through <strong>Project Vidya</strong> and <strong>Project Hope</strong>, education becomes a powerful foundation for lasting change for children, families, and communities.</>,
         ],
         images: [
             "/images/ps-1.png",
@@ -27,9 +28,10 @@ const programsData = [
         bgColor: "bg-[#F9F9F9]"
     },
     {
+        id: "relief",
         title: "Basic needs and Immediate Relief",
         content: [
-            <p>At Bread and Book Foundation (BBF India), we believe that dignity begins with meeting basic human needs. Through our <strong> Sarva Aahaar project </strong>, we provide nutritious meals to children and families who face food insecurity, ensuring no one goes hungry during difficult times. For families living on the margins, everyday life is shaped by uncertainty—where access to food, health, warmth, and hygiene cannot be taken for granted. BBF steps in during these moments of vulnerability to provide timely support that helps children and families regain stability and security.</p>,
+            <>At Bread and Book Foundation (BBF India), we believe that dignity begins with meeting basic human needs. Through our <strong> Sarva Aahaar project </strong>, we provide nutritious meals to children and families who face food insecurity, ensuring no one goes hungry during difficult times. For families living on the margins, everyday life is shaped by uncertainty—where access to food, health, warmth, and hygiene cannot be taken for granted. BBF steps in during these moments of vulnerability to provide timely support that helps children and families regain stability and security.</>,
             "Our approach to immediate relief is rooted in compassion and responsiveness. Whether addressing ongoing hardships or sudden crises, we work closely with communities to ensure essential needs are met in a respectful and practical manner. By supporting households during periods of food insecurity, health challenges, seasonal extremes, or emergency situations, we help reduce the pressures that often push children out of school and families deeper into poverty.",
             "Beyond short-term assistance, BBF’s relief efforts aim to restore a sense of normalcy and resilience. When families are supported through difficult times, children are better able to return to learning, caregivers can focus on rebuilding their livelihoods, and communities can begin to recover with confidence. Through this integrated approach, BBF ensures that immediate relief is not just a response to crisis, but a foundation for long-term well-being and opportunity."
         ],
@@ -42,6 +44,7 @@ const programsData = [
         bgColor: "bg-white"
     },
     {
+        id: "health",
         title: "Health and Special Care",
         content: [
             "Health quietly shapes every child’s ability to learn, grow, and dream. Even minor, untreated illnesses can disrupt schooling, weaken confidence, and place families under immense strain. At Bread and Book Foundation (BBF India), we recognize that educational progress is deeply connected to physical well-being, especially in rural and underserved communities where access to healthcare remains limited.",
@@ -58,6 +61,7 @@ const programsData = [
         bgColor: "bg-[#F9F9F9]"
     },
     {
+        id: "solutions",
         title: "Large-Scale Solutions",
         content: [
             "Sustainable change requires long-term, community-led solutions. At Bread and Book Foundation (BBF India), we envision impact that goes beyond individual interventions—toward transforming entire communities through inclusive and practical development.",
@@ -86,7 +90,7 @@ export default function Programs() {
             {/* Programs List */}
             <div className="">
                 {programsData.map((program, index) => (
-                    <section key={index} className={`py-20 ${program.bgColor}`}>
+                    <section key={index} id={program.id} className={`py-20 ${program.bgColor} scroll-mt-24`}>
                         <div className="container mx-auto px-6">
                             <ScrollReveal>
                                 <div className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}>
