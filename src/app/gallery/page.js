@@ -40,8 +40,7 @@ export default function Gallery() {
         { src: "/images/gallery/IMG_3312.PNG", alt: "Building futures" },
         { src: "/images/gallery/sog2.jpeg", alt: "Rural outreach" },
         { src: "/images/gallery/sog4.jpeg", alt: "Education first" },
-        { src: "/images/gallery/IMG_3581.JPG", alt: "Learning together" },
-        { src: "/images/gallery/IMG_3582.JPG", alt: "Bright futures" },
+        { src: "/images/gallery/sog3.jpeg", alt: "Bright futures" },
         { src: "/images/gallery/IMG_3599.PNG", alt: "Community care" },
         { src: "/images/gallery/IMG_3724.JPEG", alt: "Distribution drive" },
         { src: "/images/gallery/IMG_3725.JPG", alt: "Happy faces" },
@@ -83,8 +82,6 @@ export default function Gallery() {
         { src: "/images/q2.png", alt: "Foundation activities" },
         { src: "/images/q5.JPG", alt: "Community programs" },
         { src: "/images/vs1.JPG", alt: "Volunteer service" },
-        { src: "/images/sw3.jpeg", alt: "Social work" },
-
     ];
 
     return (
