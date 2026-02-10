@@ -15,10 +15,8 @@ export default function Gallery() {
 
 
         { src: "/images/s1.jpg", alt: "Field work" },
-
-        { src: "/images/s3.jpg", alt: "Volunteer activities" },
         { src: "/images/s4.jpg", alt: "Outreach program" },
-        { src: "/images/mission.png", alt: "Our mission in action" },
+        
 
         // New Gallery Additions
         { src: "/images/gallery/44ef62c1-3744-4e02-bbf4-ea0474e4621b.jpg", alt: "Community impact" },
@@ -40,8 +38,8 @@ export default function Gallery() {
         { src: "/images/gallery/IMG_3309.PNG", alt: "Foundation event" },
         { src: "/images/gallery/IMG_3311.PNG", alt: "Social initiative" },
         { src: "/images/gallery/IMG_3312.PNG", alt: "Building futures" },
-        { src: "/images/gallery/IMG_3578.JPG", alt: "Rural outreach" },
-        { src: "/images/gallery/IMG_3579.JPG", alt: "Education first" },
+        { src: "/images/gallery/sog2.jpeg", alt: "Rural outreach" },
+        { src: "/images/gallery/sog4.jpeg", alt: "Education first" },
         { src: "/images/gallery/IMG_3581.JPG", alt: "Learning together" },
         { src: "/images/gallery/IMG_3582.JPG", alt: "Bright futures" },
         { src: "/images/gallery/IMG_3599.PNG", alt: "Community care" },
