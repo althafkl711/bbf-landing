@@ -40,7 +40,7 @@ export default function About() {
                                     The Bread and Book Foundation (BBF) was founded on the belief that hunger, educational deprivation, and inequality are interconnected challenges that must be addressed together to create lasting change.
                                 </p>
                                 <p>
-                                    Established in 2021, BBF emerged from a collective vision of professional social workers committed to supporting vulnerable communities across India. The foundation was initiated by Founder Sreelekha Chandran, a teacher from Thrissur, Kerala, whose field experience highlighted critical gaps in child-focused education. Guided by the principle that no child should choose between bread and books, this idea evolved into a structured and scalable social initiative.
+                                    Established in 2021, BBF emerged from a collective vision of professional social workers committed to supporting vulnerable communities across India. Guided by the principle that no child should choose between bread and books, this idea evolved into a structured and scalable social initiative.
                                 </p>
                                 <p>
                                     From grassroots, volunteer-led efforts to a recognized non-governmental organization by 2024, BBF has grown through consistent impact and collaboration. Today, with 80G and 12A certifications, BBF delivers integrated programs in nutrition, education, and basic needs—empowering children and families to break cyc                            
