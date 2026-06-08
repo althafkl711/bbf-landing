@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export default function VisionMissionSection() {
     return (
-        <section className="py-20 md:py-12 bg-white">
+        <section className="py-20 md:py-12 bg-gradient-to-b from-gray-50">
             <div className="container mx-auto px-6">
                 {/* Section Title */}
                             <div className="w-full flex flex-col items-center">

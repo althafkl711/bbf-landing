@@ -23,6 +23,9 @@ export default function Home() {
       {/* Mission Section */}
       <MissionSection />
 
+      {/* Featured Programs */}
+      <ProgramsSection />
+
       {/* Vision & Mission Section */}
       <VisionMissionSection />
 
@@ -38,8 +41,6 @@ export default function Home() {
       {/* Our Presence Section */}
       <PresenceSection />
 
-      {/* Featured Programs */}
-      <ProgramsSection />
 
       {/* Stories and Updates Section */}
       <StoriesSection />
