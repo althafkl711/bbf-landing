@@ -33,7 +33,7 @@ export default function MissionSection() {
                                 {/* Bottom Right */}
                                 <div className=" overflow-hidden">
                                     <Image
-                                        src="/images/mv-1.png"
+                                        src="/images/mv-5.png"
                                         alt="Community development"
                                         fill
                                         className="object-cover"

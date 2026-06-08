@@ -4,6 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import PageHero from "@/components/PageHero";
 import ImageSlider from "@/components/ImageSlider";
 import ImpactStories from "@/components/ImpactStories";
+import RecentProjectsSection from "@/components/RecentProjectsSection";
 
 export const metadata = {
     title: "Our Programs | Bread and Book Foundation",
@@ -122,6 +123,9 @@ export default function Programs() {
                 ))}
             </div>
 
+
+            {/* Recent Projects Section */}
+            <RecentProjectsSection />
 
             {/* Impact Stories Section */}
             <ImpactStories />
