@@ -24,6 +24,7 @@ const programs = [
         textColor: "#FFFFFF",
         labelColor: "rgba(255,255,255,0.65)",
         linkColor: "#FFFFFF",
+        link: "/programs#preveshanolsavam",
     },
     {
         label: "BBF",
@@ -35,6 +36,7 @@ const programs = [
         textColor: "#1A1A1A",
         labelColor: "rgba(0,0,0,0.5)",
         linkColor: "#1A1A1A",
+        link: "/programs#preveshanolsavam",
     },
     {
         label: "PROJECT",
@@ -47,6 +49,7 @@ const programs = [
         labelColor: "rgba(255,255,255,0.65)",
         linkColor: "#FFFFFF",
         fullWidth: true,
+        link: "/programs#preveshanolsavam",
     },
 ];
 
@@ -258,7 +261,7 @@ export default function ProgramsSection() {
 
                                 {/* Link */}
                                 <Link
-                                    href="/programs"
+                                    href={p.link}
                                     className="text-sm font-semibold hover:underline transition-all"
                                     style={{ color: p.linkColor }}
                                 >
@@ -298,7 +301,7 @@ export default function ProgramsSection() {
 
                                 {/* Link */}
                                 <Link
-                                    href="/programs"
+                                    href={p.link}
                                     className="text-sm font-semibold hover:underline transition-all"
                                     style={{ color: p.linkColor }}
                                 >
