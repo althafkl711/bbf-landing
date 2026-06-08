@@ -84,7 +84,7 @@ const projects = [
             "The impact of this initiative extends far beyond the meals served. Every plate of food represents dignity, compassion, and a commitment to creating lasting change in the lives of vulnerable children. Through the unwavering support of donors and well-wishers, Bread and Book Foundation has already provided more than 16,200 nutritious meals to the children of Hope Community Village, ensuring consistent nourishment and care for those who need it most.",
         ],
         images: [
-            { src: "/images/projects/Midday-meal-hope/hunger-1.jpg", span: "large" },
+            { src: "/images/projects/Midday-meal-hope/hunger-5.jpg", span: "large" },
             { src: "/images/projects/Midday-meal-hope/hunger-2.jpg", span: "small" },
             { src: "/images/projects/Midday-meal-hope/hunger-3.jpg", span: "small" },
         ],

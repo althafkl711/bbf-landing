@@ -10,9 +10,72 @@ export const metadata = {
 export default function Gallery() {
     // All images from public/images directory
     const galleryImages = [
+        // Preveshanolsavam 2026
+        { src: "/images/projects/Preveshanolsavam/preveshanolsavam-1.jpg", alt: "Preveshanolsavam 2026 - Distribution Drive" },
+        { src: "/images/projects/Preveshanolsavam/preveshanolsavam-2.jpg", alt: "Preveshanolsavam 2026 - Educational Kits" },
+        { src: "/images/projects/Preveshanolsavam/preveshanolsavam-3.jpg", alt: "Preveshanolsavam 2026 - Welcoming Students" },
+        { src: "/images/projects/Preveshanolsavam/preveshanolsavam-4.jpg", alt: "Preveshanolsavam 2026 - Community Support" },
+        { src: "/images/projects/Preveshanolsavam/preveshanolsavam-5.jpg", alt: "Preveshanolsavam 2026 - Learning Materials" },
+        { src: "/images/projects/Preveshanolsavam/preveshanolsavam-6.jpg", alt: "Preveshanolsavam 2026 - Happy Faces" },
+        { src: "/images/projects/Preveshanolsavam/preveshanolsavam-7.jpg", alt: "Preveshanolsavam 2026 - School Event" },
+        { src: "/images/projects/Preveshanolsavam/preveshanolsavam-8.jpg", alt: "Preveshanolsavam 2026 - Support Program" },
 
+        // Aksharam Project 2026
+        { src: "/images/projects/Aksharam-2026/aksharam-1.jpg", alt: "Aksharam Project 2026 - Hope and Learning" },
+        { src: "/images/projects/Aksharam-2026/aksharam-2.jpg", alt: "Aksharam Project 2026 - Distribution Event" },
+        { src: "/images/projects/Aksharam-2026/aksharam-3.jpg", alt: "Aksharam Project 2026 - Happy Kids" },
+        { src: "/images/projects/Aksharam-2026/aksharam-4.jpg", alt: "Aksharam Project 2026 - Community Support" },
+        { src: "/images/projects/Aksharam-2026/aksharam-5.jpg", alt: "Aksharam Project 2026 - School Kits" },
+        { src: "/images/projects/Aksharam-2026/aksharam-6.jpg", alt: "Aksharam Project 2026 - Smiles" },
+        { src: "/images/projects/Aksharam-2026/aksharam-7.jpg", alt: "Aksharam Project 2026 - Educational Support" },
+        { src: "/images/projects/Aksharam-2026/aksharam-8.jpg", alt: "Aksharam Project 2026 - School Bags" },
+        { src: "/images/projects/Aksharam-2026/aksharam-9.jpg", alt: "Aksharam Project 2026 - Tribal Child Support" },
+        { src: "/images/projects/Aksharam-2026/aksharam-10.jpg", alt: "Aksharam Project 2026 - Inauguration Ceremony" },
+        { src: "/images/projects/Aksharam-2026/aksharam-11.jpg", alt: "Aksharam Project 2026 - Dignity and Care" },
+        { src: "/images/projects/Aksharam-2026/aksharam-12.jpg", alt: "Aksharam Project 2026 - Distribution Drive" },
+        { src: "/images/projects/Aksharam-2026/aksharam-13.jpg", alt: "Aksharam Project 2026 - Empowering Kids" },
+        { src: "/images/projects/Aksharam-2026/aksharam-14.jpg", alt: "Aksharam Project 2026 - Event Highlights" },
+        { src: "/images/projects/Aksharam-2026/aksharam-15.jpg", alt: "Aksharam Project 2026 - Brighter Future" },
 
+        // Veyil Pookkal
+        { src: "/images/projects/Veyil-pookal/veyil-pookkal-1.jpg", alt: "Veyil Pookkal - Tribal Summer Camp" },
+        { src: "/images/projects/Veyil-pookal/veyil-pookkal-2.jpg", alt: "Veyil Pookkal - Art and Culture" },
+        { src: "/images/projects/Veyil-pookal/veyil-pookkal-3.jpg", alt: "Veyil Pookkal - Summer Activities" },
+        { src: "/images/projects/Veyil-pookal/veyil-pookkal-4.jpg", alt: "Veyil Pookkal - Creative Learning" },
+        { src: "/images/projects/Veyil-pookal/veyil-pookkal-5.jpg", alt: "Veyil Pookkal - Fun & Games" },
+        { src: "/images/projects/Veyil-pookal/veyil-pookkal-6.jpg", alt: "Veyil Pookkal - Traditional Performance" },
+        { src: "/images/projects/Veyil-pookal/veyil-pookkal-7.jpg", alt: "Veyil Pookkal - Group Photo" },
+        { src: "/images/projects/Veyil-pookal/veyil-pookkal-8.jpg", alt: "Veyil Pookkal - Camp Activities" },
+        { src: "/images/projects/Veyil-pookal/veyil-pookkal-9.jpg", alt: "Veyil Pookkal - Tribal Kids Care" },
+        { src: "/images/projects/Veyil-pookal/veyil-pookkal-10.jpg", alt: "Veyil Pookkal - Summer Camp Fun" },
+        { src: "/images/projects/Veyil-pookal/veyil-pookkal-11.jpg", alt: "Veyil Pookkal - Empowering Youth" },
+        { src: "/images/projects/Veyil-pookal/veyil-pookkal-12.jpg", alt: "Veyil Pookkal - Inspiring Minds" },
+        { src: "/images/projects/Veyil-pookal/veyil-pookkal-13.jpg", alt: "Veyil Pookkal - Sharing Smiles" },
+        { src: "/images/projects/Veyil-pookal/veyil-pookkal-14.jpg", alt: "Veyil Pookkal - Educational Activities" },
 
+        // From Hunger to Hope
+        { src: "/images/projects/Midday-meal-hope/hunger-2.jpg", alt: "From Hunger to Hope - Nutritious Food" },
+        { src: "/images/projects/Midday-meal-hope/hunger-3.jpg", alt: "From Hunger to Hope - Feeding Children" },
+        { src: "/images/projects/Midday-meal-hope/hunger-4.jpg", alt: "From Hunger to Hope - Community Village" },
+        { src: "/images/projects/Midday-meal-hope/hunger-5.jpg", alt: "From Hunger to Hope - Serving Meals" },
+        { src: "/images/projects/Midday-meal-hope/hunger-6.jpg", alt: "From Hunger to Hope - Hope Village Care" },
+        { src: "/images/projects/Midday-meal-hope/hunger-7.jpg", alt: "From Hunger to Hope - Group Lunch" },
+        { src: "/images/projects/Midday-meal-hope/hunger-8.jpg", alt: "From Hunger to Hope - Healthy Diet" },
+        { src: "/images/projects/Midday-meal-hope/hunger-9.jpg", alt: "From Hunger to Hope - Daily Meals" },
+
+        // BBF Learning Centre, Bhopal
+        { src: "/images/projects/Bhopal-learning-centre/bhopal-1.jpg", alt: "BBF Learning Centre Bhopal - Class Session" },
+        { src: "/images/projects/Bhopal-learning-centre/bhopal-2.jpg", alt: "BBF Learning Centre Bhopal - Children Learning" },
+        { src: "/images/projects/Bhopal-learning-centre/bhopal-3.jpg", alt: "BBF Learning Centre Bhopal - Educational Activity" },
+        { src: "/images/projects/Bhopal-learning-centre/bhopal-4.jpg", alt: "BBF Learning Centre Bhopal - Study Group" },
+        { src: "/images/projects/Bhopal-learning-centre/bhopal-5.jpg", alt: "BBF Learning Centre Bhopal - Classroom Fun" },
+        { src: "/images/projects/Bhopal-learning-centre/bhopal-6.jpg", alt: "BBF Learning Centre Bhopal - Support Drive" },
+        { src: "/images/projects/Bhopal-learning-centre/bhopal-7.jpg", alt: "BBF Learning Centre Bhopal - Child Education" },
+        { src: "/images/projects/Bhopal-learning-centre/bhopal-8.jpg", alt: "BBF Learning Centre Bhopal - Brighter Futures" },
+        { src: "/images/projects/Bhopal-learning-centre/bhopal-9.jpg", alt: "BBF Learning Centre Bhopal - Learning Fun" },
+        { src: "/images/projects/Bhopal-learning-centre/bhopal-10.jpg", alt: "BBF Learning Centre Bhopal - Student Smiles" },
+        { src: "/images/projects/Bhopal-learning-centre/bhopal-11.jpg", alt: "BBF Learning Centre Bhopal - Interactive Classes" },
+        { src: "/images/projects/Bhopal-learning-centre/bhopal-12.jpg", alt: "BBF Learning Centre Bhopal - Hope and Opportunity" },
 
         { src: "/images/s1.jpg", alt: "Field work" },
         { src: "/images/s4.jpg", alt: "Outreach program" },

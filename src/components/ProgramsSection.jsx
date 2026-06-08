@@ -59,7 +59,7 @@ const recentProjects = [
         title: "Preveshanolsavam 2026",
         description:
             "Preveshanolsavam 2026 at GVHSS Palode, organised in collaboration with Bread and Book Foundation (BBF), warmly welcomed young learners into a new academic year, celebrating education, hope, and equal opportunities for every child.",
-        link: "/programs",
+        link: "/programs#preveshanolsavam",
         collageImage: "/images/our-program/preveshanolsalavam-img1.png",
     },
     {
@@ -69,7 +69,7 @@ const recentProjects = [
         title: "BBF Learning Centre, Bhopal",
         description:
             "At the BBF Learning Centre, children receive foundational education, literacy support, life-skills training, and individual attention tailored to their learning needs. Beyond academics, our team actively engages with families and communities....",
-        link: "/programs",
+        link: "/programs#learning-centre",
         collageImage: "/images/our-program/learning-centre-img.png",
     },
     {
@@ -79,8 +79,8 @@ const recentProjects = [
         title: "From Hunger to Hope",
         description:
             "Project Zero Hunger fights food insecurity by delivering nutritious meals to children and families in need. Beyond feeding the hungry, the project seeks to restore dignity, improve well-being, and create a future where no one is left behind due to a lack of food.",
-        link: "/programs",
-        collageImage: "/images/our-program/hunger-img.png",
+        link: "/programs#hunger-to-hope",
+        collageImage: "/images/our-program/hunger-img2.png",
     },
 ];
 
@@ -223,7 +223,7 @@ export default function ProgramsSection() {
                 {/* Section heading */}
                 <ScrollReveal>
                     <div className="text-center mb-10">
-                        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-3">
                             Our Programs
                         </h2>
                         <div className="w-12 h-[3px] bg-primary mx-auto rounded-full" />
